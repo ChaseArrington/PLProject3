@@ -1,24 +1,18 @@
 $(document).ready(function() {
-    // preload images
     $("#image_list a").each(function() {
-        var swappedImage = new Image();
-        swappedImage.src = $(this).attr("href");
+        var newImage = new Image();
+        newImage.src = $(this).attr("href");
     });
-
-    // set up event handlers for links
+    // event handlers
     $("#image_list a").click(function(evt) {
-        // swap image
-        var imageURL = $(this).attr("href");
+        var imageURL = $(this).attr("href");   // change image
         $("#image").attr("src", imageURL);
 
-        //swap caption
         var caption = $(this).attr("title");
         $("#caption").text(caption);
 
-        // cancel the default action of the link
-        evt.preventDefault();  // jQuery method that's cross-browser compatible
-    }); // end click
+        evt.preventDefault(); // cancel default
+    });
 
-    // move focus to first thumbnail
     $("li:first-child a").focus();
-}); // end ready
+});
