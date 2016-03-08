@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Person Tester Application</title>
+    <script type="text/javascript" src="person_app.js"></script>
+
+</head>
+<body>
+    <h1>Welcome to the Person Tester application</h1>
+    <form id="cust_or_emp" name="cust_or_emp" action="person_app.js" method="get">
+        <label for="c_or_e">Create customer or employee? (c/e):</label>
+        <input type="text" id="c_or_e" name="c_or_e"><br>
+        <label>&nbsp;</label>
+        <input type="submit" id="submit" name="submit" value="Submit">
+    </form>
+    <form id="customer_info" name="customer_info" action="person_app.js" method="get">
+        <label for="first_name">Enter first name:</label>
+        <input type="text" id="first_name" name="first_name"><br>
+        <label for="last_name">Enter last name:</label>
+        <input type="text" id="last_name" name="last_name"><br>
+        <label for="email_address">Enter email address:</label>
+        <input type="text" id="email_address" name="email_address"><br>
+        <label for="customer_number">Customer Number:</label>
+        <input type="text" id="customer_number" name="customer_number"><br>
+        <label>&nbsp;</label>
+        <input type="submit" id="submit" name="submit" value="Submit">
+    </form>
+
+    <form id="employee_info" name="employee_info" action="person_app.js" method="get">
+        <label for="first_name">Enter first name:</label>
+        <input type="text" id="first_name" name="first_name"><br>
+        <label for="last_name">Enter last name:</label>
+        <input type="text" id="last_name" name="last_name"><br>
+        <label for="email_address">Enter email address:</label>
+        <input type="text" id="email_address" name="email_address"><br>
+        <label for="social_security">Social security number:</label>
+        <input type="text" id="social_security" name="social_security" placeholder="###-##-####"><br>
+        <label>&nbsp;</label>
+        <input type="submit" id="submit" name="submit" value="Submit"
+    </form>
+</body>
+</html>
